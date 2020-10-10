@@ -1,0 +1,22 @@
+----------------------------------------
+users table
+----------------------------------------
+CREATE TABLE users (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    fullname VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+----------------------------------------
+employees table 
+----------------------------------------
+CREATE TABLE employees (
+    user_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    id INT(10) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    salary INT(10) NOT NULL
+);
+----------------------------------------

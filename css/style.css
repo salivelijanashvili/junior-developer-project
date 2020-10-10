@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.button1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-inline-end: 3px;
+}
+
+.buttin1 button {
+  color: white;
+}
+
+#submit {
+  background-color: white;
+  border-radius: 12px;
+  margin: 3px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  text-shadow: rgb(255, 2, 2);
+  text-emphasis-color: white;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+body {
+  background: rgba(1, 0, 2, 0.5)
+    url('https://www.ma-assessors.com/wp-content/uploads/2016/02/corporate-buildings-white-1.jpg')
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* height: 200%; */
+  /* text-align: center; */
+  align-items: center;
+}
+/* TABLE */
+.wrapper {
+  background-color: rgba(30, 143, 255, 0.438);
+  width: 500px;
+  margin: 50px auto;
+  border-radius: 12px;
+  padding: 30px;
+}
+.wraper-table {
+  width: 850px;
+}
+.wraper-profile {
+  width: 68%;
+  margin: auto;
+  float: right;
+}
+/* PROFILE */
+.page-header {
+  background-color: rgba(220, 236, 240, 0.7);
+  border-radius: 12px;
+  width: 30%;
+  margin: auto;
+  float: left;
+}
+
+.page-header h2 {
+  margin-top: 0px;
+}
+
+table tr td:last-child a {
+  margin-right: 15px;
+}
+/* NAVBAR */
+#header {
+  overflow: hidden;
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 100%;
+  background-color: rgba(217, 229, 240, 0.8);
+  padding: 15px 100px;
+}
+
+#header a {
+  color: blue;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 8px;
+}
+
+#header a:focus {
+  color: red;
+}
+#header a:hover {
+  background-color: rgba(211, 211, 211, 0.6);
+  color: black;
+}
+.navbar-right {
+  float: right;
+}
+
+/* MAIN */
+.main-container {
+  width: 90%;
+  margin: 80px auto 0;
+  overflow: hidden;
+}
+
+/* FORM */
+.generalFom {
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.form-title {
+  text-align: center;
+}
+
+form:before {
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  z-index: -1;
+  border-radius: 10px;
+}
+.check {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 2px;
+}
+.check > label {
+  margin: 0 0 0 8px;
+  cursor: pointer;
+}
+.check > input {
+  cursor: pointer;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button {
+  border: none;
+}
+
+/* card */
+.card-body {
+  background-color: rgba(220, 236, 240, 0.7);
+  margin: 0 auto;
+}
+.card-body a {
+  color: blue;
+}
+/* ERROR MESSAGES */
+.help-block {
+  color: rgb(218, 94, 94);
+  /* margin-left: 5px; */
+}
+
+/* FOOTER */
+footer {
+  clear: both;
+}
+/* RESPONSIVE NAVBAR */
+.topnav {
+  overflow: hidden;
+}
+.navbar a {
+  float: left;
+  display: block;
+}
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.topnav .icon {
+  display: none;
+}
+/* MEDIA  */
+@media screen and (max-width: 950px) {
+  .main-container {
+    width: 98%;
+  }
+  .res {
+    width: 700px;
+  }
+  .wrapper-form {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .navbar-right a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar-right {
+    float: none;
+  }
+  /* #header {
+    padding-top: 0;
+  } */
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .main-container {
+    width: 98%;
+  }
+  .res {
+    width: 600px;
+  }
+  .wrapper-form {
+    width: 350px;
+  }
+}
