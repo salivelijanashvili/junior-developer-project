@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <meta charset="UTF-8">
   <title>Create</title>
@@ -110,7 +110,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <span class="help-block"><?php echo $address_err; ?></span>
               </div>
               <div class="form-group <?php echo (!empty($salary_err)) ? 'has-error' : ''; ?>">
-                <label>Prize</label>
+                <label>Price</label>
                 <input type="text" name="salary" class="form-control" value="<?php echo $salary; ?>" autocomplete="off">
                 <span class="help-block"><?php echo $salary_err; ?></span>
               </div>
